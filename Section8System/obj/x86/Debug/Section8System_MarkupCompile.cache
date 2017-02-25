@@ -1,0 +1,20 @@
+﻿Section8System
+
+
+winexe
+VB
+.vb
+\\192.168.10.13\Share\Arbor Program\Desktop Application\Section 8 System\Section8System\obj\x86\Debug\
+Section8System
+none
+false
+
+\\192.168.10.13\Share\Arbor Program\Desktop Application\Section 8 System\Section8System\Application.xaml
+151571492871
+
+22457429603
+13-1440710782
+Presentation Layer\Controls\County Selection\ctlCountyItem.xaml;Presentation Layer\Controls\County Selection\ctlMainWindow.xaml;Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_GUI.xaml;Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_PointsSummary.xaml;Presentation Layer\Controls\Plugins\InputModify\Listview\ctlInputModify_ListView.xaml;Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_LocationInfo.xaml;Presentation Layer\Controls\Plugins\InputModify\ctlInputModify_Main.xaml;Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_UnitType.xaml;Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_Utilities.xaml;Presentation Layer\Controls\Settings\ctlSettings.xaml;Presentation Layer\Controls\MainWindow\ctlContentItem.xaml;Presentation Layer\Controls\MainWindow\ctlDashboard.xaml;Presentation Layer\Controls\Plugins\SystemMaintenance\ctlSystemMaintenance_Main.xaml;Presentation Layer\Controls\Plugins\UnitRecertification\ctlUnitRecertification_Main.xaml;MainWindow.xaml;
+
+False
+

@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="ctlSystemMaintenance_Main"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" Margin="5" Name="StackPanel1" VerticalAlignment="Stretch" Orientation="Horizontal">
+            <Label Content="Type Code:" Height="28" Name="Label1" />
+            <ComboBox Height="23" Name="cmbTypeCode" Width="200" />
+            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="5,0,0,0" Name="txtAddNewValue" Text="Add New Type Code Value"
+                   VerticalAlignment="Center" Foreground="Navy" />
+        </StackPanel>
+        <Image Grid.Row="0" Grid.Column="1"  Height="20" HorizontalAlignment="Right" Name="imgRefresh" Stretch="Fill" VerticalAlignment="Center" Width="20" Margin="0,0,10,0" Source="/Section8System;component/Images/view-refresh-7.png" />
+        <DataGrid AutoGenerateColumns="False" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="10" Name="dgTypeCode" VerticalAlignment="Stretch" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Description" Width="200" Binding="{Binding}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Points" Width="200*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,359 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Section8System
+</name>
+</assembly>
+<members>
+<member name="T:Section8System.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Section8System.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:Section8System.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:Section8System.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:Section8System.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:Section8System.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:Section8System.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Section8System.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Section8System.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Section8System.My.Resources.Resources.Door">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Section8System.My.Resources.Resources.WpfPageTransitions">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="T:Section8System.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:Section8System.Application.AssemblyResolve(System.Object,System.ResolveEventArgs)">
+ <summary>
+ This method will handle reading the embedded dll into memory
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Section8System.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:Section8System.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="M:Section8System.cSQLDatabase.#ctor(System.String,System.String,System.String,System.String,System.Boolean)">
+ <summary>New - Class constructor allowing user to specify the database name, 
+ server and user credentials. This routine will create and open a connection 
+ to the database as well as create a DataAdapter for use by the class.</summary>
+ <param name="Server">Server Name</param>
+ <param name="DatabaseName">Database Name</param>
+ <param name="Username">Username</param>
+ <param name="Password">Password</param>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.Dispose">
+ <summary>
+ Dispose - Class destructor. Disposes the objects created by the class.
+ </summary>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.AdHocQuery(System.String)">
+ <summary>
+ AdHocQuery - Performs a query against the database via the user's 
+ SQL text passed into the function.
+ </summary>
+ <param name="SqlText">SQL query text to executed</param>
+ <returns>Datatable with results</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteMyScalar(System.String,System.Data.SqlClient.SqlParameter[])">
+ <summary>
+ ExecuteMyScalar - executes a stored procedure with an array of parameters and returns the first row/column value
+ </summary>
+ <param name="StoredProcedureName">Stored Procedure Name</param>
+ <param name="Params">Array of SqlParameters</param>
+ <returns>Value from first row/column in the resultset</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteStoredProcedureDataset(System.String,System.Data.SqlClient.SqlParameter[])">
+ <summary>
+ ExecuteStoredProcedureDataset - Calls a stored procedure with the passed in parameter array
+ </summary>
+ <param name="StoredProcedureName"></param>
+ <param name="Params">Array of Parameters</param>
+ <returns>Dataset</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteStoredProcedure(System.String,System.Data.SqlClient.SqlParameter[])">
+ <summary>
+ ExecuteStoredProcedure - Calls a stored procedure with the passed in parameter array
+ </summary>
+ <param name="StoredProcedureName"></param>
+ <param name="Params">Array of Parameters</param>
+ <returns>Datatable</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteStoredProcedureEx(System.String,System.Data.SqlClient.SqlParameter[])">
+ <summary>
+ ExecuteStoredProcedureEx - Calls a stored procedure with the passed in parameter array, return error and result table
+ </summary>
+ <param name="StoredProcedureName"></param>
+ <param name="Params">Array of Parameters</param>
+ <returns>DataSet</returns>
+ <remarks>Copyright © 2013 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteNoReturnStoredProcedure(System.String,System.Data.SqlClient.SqlParameter[])">
+ <summary>
+ ExecuteNoReturnStoredProcedure - Calls a stored procedure with the passed in parameter array
+ </summary>
+ <param name="StoredProcedureName">Stored procedure to call</param>
+ <param name="Params">Array of Parameters</param>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteNoReturnStoredProcedure(System.String)">
+ <summary>
+ ExecuteNoReturnStoredProcedure - executes a stored procedure that returns no values
+ </summary>
+ <param name="StoredProcedureName">Stored procedure to call</param>
+ <remarks></remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ConvertSQLReaderToDataTable(System.Data.SqlClient.SqlDataReader@)">
+ <summary>
+ ConvertSQLReaderToDataTable - Takes data from a SQL Data Reader object and loads it into a DataTable
+ </summary>
+ <param name="SQLReader">SQLDataReader to load into DataTable</param>
+ <returns>DataTable</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ConvertSQLReaderToDataSet(System.Data.SqlClient.SqlDataReader@)">
+ <summary>
+ ConvertSQLReaderToDataSet - Takes data from a SQL Data Reader object and loads it into a DataSet
+ </summary>
+ <param name="SQLReader">SQLDataReader to load into DataSet with Error and Result tabke</param>
+ <returns>DataSet</returns>
+ <remarks>Copyright © 2013 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteMySQL(System.String)">
+ <summary>
+ ExecuteMySQL - Executes a SQL command
+ </summary>
+ <param name="SqlText">The SQL statement to be executed</param>
+ <returns>True or throws an exception</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.ExecuteMySQLEx(System.String)">
+ <summary>
+ ExecuteMySQLEx - Executes a SQL command extented function
+ </summary>
+ <param name="SqlText">The SQL statement to be executed</param>
+ <returns>Number of rows affected </returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="M:Section8System.cSQLDatabase.GetSQLCompatibleString(System.String,System.Boolean)">
+ <summary>
+ GetSQLCompatibleString - Fixes single apostophe issues in sql strings
+ </summary>
+ <param name="Value">The string value to be checked/corrected</param>
+ <param name="WrapWithApostrophes">If set to true, string will be wrapped in apostophes</param>
+ <returns>The string value</returns>
+ <remarks>Copyright © 2007 by Corning, Inc.</remarks>
+</member>
+<member name="T:Section8System.ctlCountyItem">
+<summary>
+ctlCountyItem
+</summary>
+</member>
+<member name="M:Section8System.ctlCountyItem.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlMainWindow">
+<summary>
+ctlMainWindow
+</summary>
+</member>
+<member name="M:Section8System.ctlMainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_GUI">
+<summary>
+ctlInputModify_GUI
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_GUI.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_PointsSummary">
+<summary>
+ctlInputModify_PointsSummary
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_PointsSummary.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_ListView">
+<summary>
+ctlInputModify_ListView
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_ListView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_LocationInfo">
+<summary>
+ctlInputModify_LocationInfo
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_LocationInfo.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_Main">
+<summary>
+ctlInputModify_Main
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_Main.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_UnitType">
+<summary>
+ctlInputModify_UnitType
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_UnitType.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlInputModify_Utilities">
+<summary>
+ctlInputModify_Utilities
+</summary>
+</member>
+<member name="M:Section8System.ctlInputModify_Utilities.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlSettings">
+<summary>
+ctlSettings
+</summary>
+</member>
+<member name="M:Section8System.ctlSettings.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlContentItem">
+<summary>
+ctlContentItem
+</summary>
+</member>
+<member name="M:Section8System.ctlContentItem.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlDashboard">
+<summary>
+ctlDashboard
+</summary>
+</member>
+<member name="M:Section8System.ctlDashboard.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlSystemMaintenance_Main">
+<summary>
+ctlSystemMaintenance_Main
+</summary>
+</member>
+<member name="M:Section8System.ctlSystemMaintenance_Main.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.ctlUnitRecertification_Main">
+<summary>
+ctlUnitRecertification_Main
+</summary>
+</member>
+<member name="M:Section8System.ctlUnitRecertification_Main.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:Section8System.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:Section8System.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

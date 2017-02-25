@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="ctlInputModify_UnitType"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="225">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Column="1" Height="23" HorizontalAlignment="Stretch" Margin="5,0,10,0" Name="cmbType" VerticalAlignment="Center" />
+        <Label Content="Unit Type:" Grid.Column="0" Grid.Row="1" Height="28" HorizontalAlignment="Right" Margin="0,0,0,0" Name="Label1" 
+               VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Stretch" Margin="5,0,10,0" Name="cmbUnitType" VerticalAlignment="Center" />
+        <Label Content="Year Built:" Grid.Column="0" Grid.Row="2" Height="28" HorizontalAlignment="Right" Margin="0,0,0,0" Name="Label2" 
+               VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Grid.Row="2" Height="23" HorizontalAlignment="Stretch" Margin="5,0,10,0" Name="cmbYearBuilt" VerticalAlignment="Center" />
+        <Label Content="Location:" Grid.Column="0" Grid.Row="3" Height="28" HorizontalAlignment="Right" Margin="0,0,0,0" Name="Label3" 
+               VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Grid.Row="3" Height="23" HorizontalAlignment="Stretch" Margin="5,0,10,0" Name="cmbLocation" VerticalAlignment="Center" />
+        <Label Content="Quality:" Grid.Column="0" Grid.Row="4" Height="28" HorizontalAlignment="Right" Margin="0,0,0,0" Name="Label4" 
+               VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Grid.Row="4" Height="23" HorizontalAlignment="Stretch" Margin="5,0,10,0" Name="cmbQuality" VerticalAlignment="Center" />
+    </Grid>
+</UserControl>

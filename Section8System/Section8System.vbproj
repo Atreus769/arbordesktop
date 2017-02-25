@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{69A203E5-6026-4677-B830-7D6F7DC713A5}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Section8System</RootNamespace>
+    <AssemblyName>Section8System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Section8System.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Section8System.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>address-book-new-2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Section8System, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfPageTransitions">
+      <HintPath>..\..\..\..\..\Downloads\PageTransitionsDemo\WpfPageTransitions\bin\Debug\WpfPageTransitions.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Presentation Layer\Controls\County Selection\ctlCountyItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\County Selection\ctlMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_GUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_PointsSummary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\Listview\ctlInputModify_ListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_LocationInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\ctlInputModify_Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_UnitType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_Utilities.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Settings\ctlSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\MainWindow\ctlContentItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\MainWindow\ctlDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\SystemMaintenance\ctlSystemMaintenance_Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presentation Layer\Controls\Plugins\UnitRecertification\ctlUnitRecertification_Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data Access Layer\clsDataAccess.vb" />
+    <Compile Include="Data Access Layer\cSQLDatabase.vb" />
+    <Compile Include="Presentation Layer\Controls\County Selection\ctlCountyItem.xaml.vb">
+      <DependentUpon>ctlCountyItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\County Selection\ctlMainWindow.xaml.vb">
+      <DependentUpon>ctlMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_GUI.xaml.vb">
+      <DependentUpon>ctlInputModify_GUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_PointsSummary.xaml.vb">
+      <DependentUpon>ctlInputModify_PointsSummary.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\Listview\ctlInputModify_ListView.xaml.vb">
+      <DependentUpon>ctlInputModify_ListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_LocationInfo.xaml.vb">
+      <DependentUpon>ctlInputModify_LocationInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\ctlInputModify_Main.xaml.vb">
+      <DependentUpon>ctlInputModify_Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_UnitType.xaml.vb">
+      <DependentUpon>ctlInputModify_UnitType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\InputModify\GUI\ctlInputModify_Utilities.xaml.vb">
+      <DependentUpon>ctlInputModify_Utilities.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Settings\ctlSettings.xaml.vb">
+      <DependentUpon>ctlSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\MainWindow\ctlContentItem.xaml.vb">
+      <DependentUpon>ctlContentItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\MainWindow\ctlDashboard.xaml.vb">
+      <DependentUpon>ctlDashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\SystemMaintenance\ctlSystemMaintenance_Main.xaml.vb">
+      <DependentUpon>ctlSystemMaintenance_Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Controls\Plugins\UnitRecertification\ctlUnitRecertification_Main.xaml.vb">
+      <DependentUpon>ctlUnitRecertification_Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.vb">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptUnitRecertListing.rdlc" />
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\Door.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\system-run-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\system-log-out-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\document-open-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\bookmark-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\system-run-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business Access Layer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="address-book-new-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WpfPageTransitions.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\view-refresh-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Presentation Layer\Images\arrow-left-double.png" />
+    <Resource Include="Presentation Layer\Images\arrow-left.png" />
+    <Resource Include="Presentation Layer\Images\arrow-right-double.png" />
+    <Resource Include="Presentation Layer\Images\arrow-right.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,45 @@
+﻿<UserControl xmlns:my1="clr-namespace:WpfPageTransitions;assembly=WpfPageTransitions"  x:Class="ctlDashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Background="LightGray"
+             d:DesignHeight="450" d:DesignWidth="800" xmlns:my="clr-namespace:Section8System">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <!-- Title Bar -->
+        <StackPanel>
+            <Label Content="COUNTY-HERE" HorizontalAlignment="Left" Margin="0,0,0,0" 
+               Name="lblTitle" VerticalAlignment="Center" Foreground="Blue" FontSize="16" FontFamily="Arial" />
+            <Label Content="Today" HorizontalAlignment="Left" Margin="0,0,0,0" 
+               Name="lblDate" VerticalAlignment="Center" Foreground="Blue" FontSize="12" FontFamily="Arial" />
+        </StackPanel>
+        <Rectangle Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Name="Rectangle1" Stroke="Black" 
+                   VerticalAlignment="Bottom" Height="2" Fill="Black" />
+        <!-- Logout Grid -->
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Image HorizontalAlignment="Right" Margin="0,0,0,0" Name="imgExit" Stretch="Fill" VerticalAlignment="Center" Height="25" Width="25" Source="/Section8System;component/Presentation%20Layer/Images/system-log-out-3.png" />
+            <Label Content="Exit" HorizontalAlignment="Left" Margin="0,0,0,0" Name="lblExit" VerticalAlignment="Center" FontFamily="Arial" />
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <my:ctlContentItem x:Name="Item_InputModify" Margin="10" ContentHeader="Input/Modify Unit(s)" Height="50" ItemImage="/Section8System;component/Presentation%20Layer/Images/document-open-8.png" />
+                <my:ctlContentItem x:Name="Item_UnitRecertification" Margin="10" ContentHeader="Unit Recertification List" Height="50" ItemImage="/Section8System;component/Presentation%20Layer/Images/bookmark-folder.png" />
+                <my:ctlContentItem x:Name="Item_SystemMaintenance" Margin="10" ContentHeader="System Maintenance" Height="50" ItemImage="/Section8System;component/Presentation%20Layer/Images/system-run-31.png" />
+            </StackPanel>
+            <my1:PageTransition Grid.Row="0" Grid.Column="1" Margin="5" Name="pgPlugin" />
+        </Grid>
+    </Grid>
+</UserControl>

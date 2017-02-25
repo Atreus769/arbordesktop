@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="ctlInputModify_Main"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" xmlns:my="clr-namespace:Section8System">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right" Margin="5,0,0,0" Name="txtListView" Text="Switch to ListView"
+                   VerticalAlignment="Center" Foreground="Navy" />
+        <my:ctlInputModify_ListView Grid.Row="1" HorizontalAlignment="Stretch" x:Name="CtlInputModify_ListView1" 
+                                    VerticalAlignment="Stretch" />
+        <my:ctlInputModify_GUI Grid.Row="1" HorizontalAlignment="Stretch" x:Name="CtlInputModify_GUI1"
+                               VerticalAlignment="Stretch" />
+    </Grid>
+</UserControl>

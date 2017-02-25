@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="ctlInputModify_Utilities"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="180" d:DesignWidth="275">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- Heat -->
+        <Label Content="Heat:" Grid.Column="0" Grid.Row="0" Height="28" HorizontalAlignment="Right" Name="Label1" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Height="23" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbHeatResponsible" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="2" Height="23" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbHeatType" VerticalAlignment="Center" />
+        <!-- Hot Water -->
+        <Label Content="Hot Water:" Grid.Column="0" Grid.Row="1" Height="28" HorizontalAlignment="Right" Name="Label2" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Height="23" Grid.Row="1" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbHotWaterResponsible" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="2" Height="23" Grid.Row="1" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbHotWaterType" VerticalAlignment="Center" />
+        <!-- Cooking -->
+        <Label Content="Cooking:" Grid.Column="0" Grid.Row="2" Height="28" HorizontalAlignment="Right" Name="Label3" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Height="23" Grid.Row="2" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbCookingResponsible" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="2" Height="23" Grid.Row="2" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbCookingType" VerticalAlignment="Center" />
+        <!-- Air Cond -->
+        <Label Content="Air Cond:" Grid.Column="0" Grid.Row="3" Height="28" HorizontalAlignment="Right" Name="Label4" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Height="23" Grid.Row="3" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbAirCondResponsible" VerticalAlignment="Center" />
+        <!-- Electric -->
+        <Label Content="Electric:" Grid.Column="0" Grid.Row="4" Height="28" HorizontalAlignment="Right" Name="Label5" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Height="23" Grid.Row="4" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbElectricResponsible" VerticalAlignment="Center" />
+        <!-- Water/Sewer -->
+        <Label Content="Water/Sewer:" Grid.Column="0" Grid.Row="5" Height="28" HorizontalAlignment="Right" Name="Label6" VerticalAlignment="Center" />
+        <ComboBox Grid.Column="1" Height="23" Grid.Row="5" HorizontalAlignment="Stretch" Margin="5,0,5,0" Name="cmbWaterSewerResponsible" VerticalAlignment="Center" />
+    </Grid>
+</UserControl>
